@@ -1,0 +1,119 @@
+/* author nirav acharya 
+    last change 7-12-23
+    */
+body, header, nav, main, footer, img, h1, ul,section,aside,figure,figcaption{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+main{
+    background-color: whitesmoke;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    background-color:rgb(163, 111, 66);
+    color: #000;
+}
+
+nav{
+    background-color:rgb(163, 111, 66);
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    display: block;
+    font-size: 2em;
+    border-top: 1px solid black;
+}
+nav li a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+main{
+    padding: 2%;
+    overflow: auto;
+    font-family: verdana,Arial, sans-serif;
+    font-size: .75em;
+}
+
+
+
+footer{
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+    color: rgb(240, 210, 153);
+    background-color: #181818;
+}
+footer a{
+    color: rgb(250, 212, 142);
+    text-decoration: none;
+}
+
+/* Media Query for tablet viewport */
+@media only screen and (min-width:786px), print {
+
+
+    main{
+        font-size: 0.8em;
+    }
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.3em;
+        border-right: 1px solid #e5e9fc;
+    }
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.25em 0.5em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media only screen  and (min-width: 1280px), print { 
+
+    main{
+        font-size: 1.3em;
+    }
+
+    header{
+        padding: 2%;
+    }
+
+    nav li a{
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover{
+        color: #debf28;
+        background-color: rgb(252, 218, 153);
+    }
+
+
+}
+/* Media Query for Print */
+@media print {
+
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+  }
